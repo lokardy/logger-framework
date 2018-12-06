@@ -1,6 +1,6 @@
 package com.mycompany.loggerframework.configuration;
 
-import com.mycompany.myproject.logger.LogLevel;
+import com.mycompany.loggerframework.core.LogLevel;
 
 public interface LoggerConfiguration {
 	

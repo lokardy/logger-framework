@@ -1,18 +1,18 @@
 package com.mycompany.loggerframework.core;
 
 import java.util.concurrent.Callable;
-import com.mycompany.myproject.logger.configuration.LoggerConfiguration;
-import com.mycompany.myproject.logger.configuration.LoggerConfigurationTemplate;
-import com.mycompany.myproject.logger.sink.Sink;
-import com.mycompany.myproject.logger.sink.SinkFactory;
-import com.mycompany.myproject.logger.sink.SinkWriteContext;
+import com.mycompany.loggerframework.configuration.LoggerConfiguration;
+import com.mycompany.loggerframework.configuration.LoggerConfigurationTemplate;
+import com.mycompany.loggerframework.sink.Sink;
+import com.mycompany.loggerframework.sink.SinkFactory;
+import com.mycompany.loggerframework.sink.SinkWriteContext;
 
 public class LoggerWriteTask<V>  implements Callable<Void>{
 	
 	
 	
 	public LoggerWriteTask(LoggerConfiguration loggerConfiguration,
-			Message currentmessage) {
+						   Message currentmessage) {
 		super();
 		this.loggerConfiguration = loggerConfiguration;
 		this.currentmessage = currentmessage;
@@ -22,7 +22,7 @@ public class LoggerWriteTask<V>  implements Callable<Void>{
 	
 	private Message currentmessage;
 	
-	@Override 
+
 	public Void call() throws Exception {
 		
 		 LoggerConfigurationTemplate loggerConfigurationTemplate = loggerConfiguration

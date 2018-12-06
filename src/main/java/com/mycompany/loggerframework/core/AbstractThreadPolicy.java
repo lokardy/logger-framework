@@ -1,4 +1,4 @@
-package com.mycompany.loggerframework.logger;
+package com.mycompany.loggerframework.core;
 
 public class AbstractThreadPolicy {
 

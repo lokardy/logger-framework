@@ -1,16 +1,16 @@
 package com.mycompany.loggerframework.core;
 
-import com.mycompany.myproject.logger.configuration.LoggerConfiguration;
-import com.mycompany.myproject.logger.configuration.LoggerConfigurationTemplate;
-import com.mycompany.myproject.logger.sink.Sink;
-import com.mycompany.myproject.logger.sink.SinkFactory;
-import com.mycompany.myproject.logger.sink.SinkWriteContext;
+import com.mycompany.loggerframework.configuration.LoggerConfiguration;
+import com.mycompany.loggerframework.configuration.LoggerConfigurationTemplate;
+import com.mycompany.loggerframework.sink.Sink;
+import com.mycompany.loggerframework.sink.SinkFactory;
+import com.mycompany.loggerframework.sink.SinkWriteContext;
 
 public class DefaultLoggerImpl implements Logger {
 
 	private LoggerConfiguration loggerConfiguration;
 
-	@Override
+
 	public void logMessage(Message message) {
 
 		 

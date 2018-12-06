@@ -1,6 +1,6 @@
 package com.mycompany.loggerframework.sink;
 
-import com.mycompany.myproject.logger.Message;
+import com.mycompany.loggerframework.core.Message;
 
 public class SinkWriteContext {
 

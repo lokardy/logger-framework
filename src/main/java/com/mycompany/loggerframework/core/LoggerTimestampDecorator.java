@@ -1,6 +1,7 @@
 package com.mycompany.loggerframework.core;
 
-import com.mycompany.myproject.logger.configuration.LoggerConfiguration;
+import com.mycompany.loggerframework.configuration.LoggerConfiguration;
+
 
 public class LoggerTimestampDecorator implements Logger {
 
@@ -8,8 +9,7 @@ public class LoggerTimestampDecorator implements Logger {
 	
 	private Logger delegatorLogger;
 	
-	
-	@Override
+
 	public void logMessage(Message message) {
 		
 		

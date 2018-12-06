@@ -1,14 +1,14 @@
 package com.mycompany.loggerframework.configuration;
 
 import java.util.Map;
-import com.mycompany.myproject.logger.LogLevel;
-import com.mycompany.myproject.logger.sink.TextFileSinkInitializationContext;
+import com.mycompany.loggerframework.core.LogLevel;
+import com.mycompany.loggerframework.sink.TextFileSinkInitializationContext;
 
 public class ProgramaticLoggerConfiguration implements LoggerConfiguration {
 
 	private Map<LogLevel, LoggerConfigurationTemplate> loggerConfigurationTemplates;
 
-	@Override
+
 	public void initializeLoggerConfiguration() {
 		LoggerConfigurationTemplate template = new LoggerConfigurationTemplate();
 		
@@ -27,7 +27,7 @@ public class ProgramaticLoggerConfiguration implements LoggerConfiguration {
 		
 	}
 	
-	@Override
+
 	public LoggerConfigurationTemplate findLoggerConfigurationByLogLevel(
 			LogLevel logLevel) {
 		

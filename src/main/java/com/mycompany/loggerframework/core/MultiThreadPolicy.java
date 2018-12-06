@@ -2,7 +2,8 @@ package com.mycompany.loggerframework.core;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import com.mycompany.myproject.logger.configuration.LoggerConfiguration;
+import com.mycompany.loggerframework.configuration.LoggerConfiguration;
+
 
 public class MultiThreadPolicy  implements ThreadPolicy {
 	ExecutorService service = Executors.newFixedThreadPool(10);
@@ -12,7 +13,7 @@ public class MultiThreadPolicy  implements ThreadPolicy {
 	private Message message;
 	
 
-	@Override
+
 	public void executeUow() {
 	 LoggerWriteTask<Void> task = new LoggerWriteTask<>(loggerConfiguration, message);
 
